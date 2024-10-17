@@ -1,16 +1,15 @@
 import React from 'react'
-import Tag from './Tag'
+import Tag from "./Tag"
 import './App.css'
 
 
-function App() {
+export default function App() {
 
   return (
     <>
-      {Tag}
+      <Tag />
       <p>Click</p>
     </>
   )
 }
 
-export default App
