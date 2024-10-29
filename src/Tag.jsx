@@ -1,10 +1,11 @@
 import React from 'react'
 
-export default function Tag() {
+export default function Tag({ edges, type, children }) {
     return (
-        <div>   
-            <p>This is a tag</p>
-        </div>
+        <>   
+        <span className={`tag tag-${type} ${edges === 'round' ? 'rounded-tag' : 'square-tag'}`}>
+            {children}
+        </span>
+        </>
     )
 }
-
