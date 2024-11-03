@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 
-export default function Card({ type, mode = 'light', displayStyle }) {
+export default function Card({ mode = 'light', displayStyle }) {
     
     const [isHovered, setIsHovered] = useState(false)
     

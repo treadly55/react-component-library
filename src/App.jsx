@@ -6,8 +6,9 @@ import Testimonial from "./Testimonial"
 import TestimonialFeature from "./TestimonialFeature"
 import './App.css'
 
-import customLogo from './assets/scrimba-logo.png';
-import customPhoto from './assets/celebrity.png';
+import customLogo from './assets/scrimba-logo.png'
+import customPhoto from './assets/celebrity.png'
+import customPhotoSml from './assets/celebrity-sml.png'
 
 
 export default function App() {
@@ -28,14 +29,14 @@ export default function App() {
       <Tag edges="round" type="alternate">Alternate</Tag>
       </div>
       <div className='badge-row'>
-      <Tag edges="square" type="general">Demo</Tag>
-      <Tag edges="square" type="error">Demo</Tag>
-      <Tag edges="square" type="alert">Demo</Tag>
-      <Tag edges="square" type="success">Demo</Tag>
-      <Tag edges="square" type="primary">Demo</Tag>
-      <Tag edges="square" type="secondary">Demo</Tag>
-      <Tag edges="square" type="teritary">Demo</Tag>
-      <Tag edges="square" type="alternate">Demo</Tag>
+      <Tag edges="square" type="general">General</Tag>
+      <Tag edges="square" type="error">Error</Tag>
+      <Tag edges="square" type="alert">Alert</Tag>
+      <Tag edges="square" type="success">Success</Tag>
+      <Tag edges="square" type="primary">Primary</Tag>
+      <Tag edges="square" type="secondary">Secondary</Tag>
+      <Tag edges="square" type="teritary">Teritary</Tag>
+      <Tag edges="square" type="alternate">Alternative</Tag>
       </div>
 
       <div className='banner-row'>
@@ -53,23 +54,25 @@ export default function App() {
       </div>        
       
       <div className="testimonial-row">
-
-        {/* <Testimonial credentials="May Andersons | Workstation CEO">
+        <Testimonial credentials="May Andersons | Workstation CEO">
           “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”
         </Testimonial>
 
         <Testimonial credentials="Pumpkin Bot | Chief Encouragement Officer" logo={customLogo}> 
           “My experience with this company has been second to none, I would highly recommend their cat food and cat treats. The focus on healthy and nutrition is a great touch.”
-        </Testimonial> */}
-      
+        </Testimonial>
+        </div>
 
-        <TestimonialFeature photo={customPhoto} credentials="Bob Belcher | Famous TV Chef">
-        I tried their "Rosemary's Baby Burger," and wow—it's perfection! The rosemary aioli pairs beautifully with the juicy patty, and the crispy shallots add just the right crunch.
-        </TestimonialFeature>
-
+        <div className="testimonial-row-feature">
         <TestimonialFeature credentials="May Andersons | Workstation CEO">
         </TestimonialFeature>
-      </div>
+
+        <TestimonialFeature photo={customPhoto} photosmall={customPhotoSml} credentials="Bob Belcher | Famous TV Chef">
+        I tried their "Rosemary's Baby Burger," and wow it is perfection! The rosemary aioli pairs beautifully with the juicy patty, and the crispy shallots add just the right crunch.
+        </TestimonialFeature>
+        </div>
+
+        <div className="title">Contact | GitHub</div>
 
     </>
   )
