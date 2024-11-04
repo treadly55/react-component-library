@@ -46,6 +46,7 @@ export default function App() {
       <Banner type="success" size="large">
       </Banner>
       <Banner type="success" />
+      <Banner type="fail" />
       </div>
 
       <div className="card-row">
