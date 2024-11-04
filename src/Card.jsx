@@ -12,7 +12,7 @@ export default function Card({ mode = 'light', displayStyle }) {
 
     return (           
         <div
-            className={`box ${mode} ${displayStyle(isHovered)}`} 
+            className={`card ${mode} ${displayStyle(isHovered)}`} 
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >

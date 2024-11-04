@@ -12,11 +12,11 @@ export default function TestimonialFeature({ children, photo, photosmall, creden
   const [name, company] = credentials.split("|")
   const config = testimonialFallback.message
   
-  const [screenSize, setScreenSize] = useState(window.innerWidth < 630 ? 'small' : 'large')
+  const [screenSize, setScreenSize] = useState(window.innerWidth < 631 ? 'small' : 'large')
 
   useEffect(() => {
     const handleResize = () => {
-      setScreenSize(window.innerWidth < 630 ? 'small' : 'large')
+      setScreenSize(window.innerWidth < 701 ? 'small' : 'large')
     }
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize);
@@ -29,7 +29,7 @@ export default function TestimonialFeature({ children, photo, photosmall, creden
         src={ screenSize === 'large' ? (photo || defaultPhoto) : (photosmall || defaultPhotoSml)}
         alt="celebrity name"
         />
-        <div className="testimonial-text">
+        <div className="testimonial-feature-text">
           <FontAwesomeIcon icon={faQuoteLeft} />
           {children || config}
           <p>
