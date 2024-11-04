@@ -25,4 +25,3 @@ export default function Banner({ type, children = null, size }) {
         </div>
     )
 }
-

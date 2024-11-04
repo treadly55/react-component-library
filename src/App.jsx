@@ -47,6 +47,7 @@ export default function App() {
       </Banner>
       <Banner type="success" />
       <Banner type="fail" />
+      <Banner type="fail" />
       </div>
 
       <div className="card-row">
@@ -73,7 +74,7 @@ export default function App() {
         </TestimonialFeature>
         </div>
 
-        <div className="title">Contact | GitHub</div>
+        <div className="title"><a href="https://twitter.com/austin_wild" title="Twitter Profile">Contact</a> | GitHub</div>
 
     </>
   )
