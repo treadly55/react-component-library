@@ -19,6 +19,29 @@ html, body {
   color: #fff;
 }
 
+.title-top {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-weight: 800;
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.title-small {
+  width: 100%;
+  background-color: #0e0d0d;
+  padding: 5px;
+  text-align: center;
+  font-weight: 300;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.title a:visited {
+  color: #fff;
+}
+
 /* Tags / Badges */
 .badge-row {
   display: flex;
@@ -36,6 +59,31 @@ html, body {
   line-height: 1.25rem;
   box-sizing: border-box;
 }
+
+.success {
+  background-color: #D1FAE5;
+  color: #065F46;
+  --highlight-color: #34D399;
+}
+
+.warning {
+  background-color: #FFFBEB;
+  color: #B45309;
+  --highlight-color: #FBBF24;
+}
+
+.error {
+  background-color: #FEF2F2;
+  color: #B45309;
+  --highlight-color: #F87171;
+}
+
+.neutral {
+  background-color: #EFF6FF;
+  color: #1C51B9;
+  --highlight-color: #60A5FA;
+}
+
 
 .tag-general {
   background-color: #F3F4F6;
@@ -75,13 +123,6 @@ html, body {
 .square-tag {
   border-radius: 0.0625rem; 
 }
-
-:root {
-  --frog-bg:#D1FAE5;
-  --frog-text:#065F46;
-  --frog-highlight: #34D399;
-}
-
 
 /* Banner */
 .banner-row {
@@ -205,7 +246,7 @@ html, body {
   display: flex;
   flex-direction: column;
   background-color: #e0e0e0;
-  padding: 100px 45px 50px 45px;
+  padding: 80px 45px 80px 45px;
   gap: 100px;
 }
 
@@ -257,7 +298,7 @@ html, body {
 /* Testimonial Feature */
 .testimonial-row-feature {
   background-color: #fdfdfd;
-  padding-top: 250px;
+  padding-top: 150px;
 }
 
 .testimonial-feature  {

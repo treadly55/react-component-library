@@ -17,43 +17,53 @@ export default function App() {
 
   return (
     <>
-      <div className="title">React Components</div>
+      <div className="title-top">React Components</div>
+      <div className="title-small">Tags</div>
       <div className='badge-row'>
-      <Tag edges="round" type="general">General</Tag>
-      <Tag edges="round" type="error">Error</Tag>
-      <Tag edges="round" type="alert">Alert</Tag>
-      <Tag edges="round" type="success">Success</Tag>
-      <Tag edges="round" type="primary">Primary</Tag>
-      <Tag edges="round" type="secondary">Secondary</Tag>
-      <Tag edges="round" type="teritary">Teritary</Tag>
-      <Tag edges="round" type="alternate">Alternate</Tag>
+        <Tag edges="round" type="general">General</Tag>
+        <Tag edges="round" type="error">Error</Tag>
+        <Tag edges="round" type="alert">Alert</Tag>
+        <Tag edges="round" type="success">Success</Tag>
+        <Tag edges="round" type="primary">Primary</Tag>
+        <Tag edges="round" type="secondary">Secondary</Tag>
+        <Tag edges="round" type="teritary">Teritary</Tag>
+        <Tag edges="round" type="alternate">Alternate</Tag>
       </div>
       <div className='badge-row'>
-      <Tag edges="square" type="general">General</Tag>
-      <Tag edges="square" type="error">Error</Tag>
-      <Tag edges="square" type="alert">Alert</Tag>
-      <Tag edges="square" type="success">Success</Tag>
-      <Tag edges="square" type="primary">Primary</Tag>
-      <Tag edges="square" type="secondary">Secondary</Tag>
-      <Tag edges="square" type="teritary">Teritary</Tag>
-      <Tag edges="square" type="alternate">Alternative</Tag>
+        <Tag edges="square" type="general">General</Tag>
+        <Tag edges="square" type="error">Error</Tag>
+        <Tag edges="square" type="alert">Alert</Tag>
+        <Tag edges="square" type="success">Success</Tag>
+        <Tag edges="square" type="primary">Primary</Tag>
+        <Tag edges="square" type="secondary">Secondary</Tag>
+        <Tag edges="square" type="teritary">Teritary</Tag>
+        <Tag edges="square" type="alternate">Alternative</Tag>
       </div>
-
+      <div className="title-small">Banners</div>
       <div className='banner-row'>
-      <Banner type="success" size="large">
-        This is the message for the success banner that will stretch across the blah
-      </Banner>
-      <Banner type="success" size="large">
-      </Banner>
-      <Banner type="success" />
-      <Banner type="fail" />
-      <Banner type="fail" />
+        <Banner type="success" size="large">
+          You can add a custom message to this banner or fallback to message that is set within the component
+        </Banner>
+
+        <Banner type="success" />
+        <Banner type="success" size="large" />
+        
+        <Banner type="warning" />
+        <Banner type="warning" size="large" />
+
+        <Banner type="error" />
+        <Banner type="error" size="large" />
+        
+        <Banner type="neutral" />
+        <Banner type="neutral" size="large" />
       </div>
 
+      <div className="title-small">Cards</div>
       <div className="card-row">
         <Card displayStyle={displayStyle} />
         <Card mode="dark" displayStyle={displayStyle} />
       </div>        
+      <div className="title-small">Testimonials</div>
       
       <div className="testimonial-row">
         <Testimonial credentials="May Andersons | Workstation CEO">
@@ -65,6 +75,7 @@ export default function App() {
         </Testimonial>
         </div>
 
+      <div className="title-small">Testimonial Feature</div>
         <div className="testimonial-row-feature">
         <TestimonialFeature credentials="May Andersons | Workstation CEO">
         </TestimonialFeature>
@@ -74,8 +85,7 @@ export default function App() {
         </TestimonialFeature>
         </div>
 
-        <div className="title"><a href="https://twitter.com/austin_wild" title="Twitter Profile">Contact</a> | GitHub</div>
-
+        <div className="title"><a href="https://twitter.com/austin_wild" title="Twitter Profile">Contact</a> | <a href="https://github.com/treadly55/react-component-library" title="GitHub Repository">GitHub</a></div>
     </>
   )
 }
