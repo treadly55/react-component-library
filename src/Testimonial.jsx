@@ -1,9 +1,7 @@
 import React from 'react'
 import defaultLogo from './assets/work-logo.png';
 
-
-export default function Testimonial({ children, logo, credentials }) {
-    
+export default function Testimonial({ children, logo, credentials }) { 
     const [name, company] = credentials.split('|')
 
     return (           

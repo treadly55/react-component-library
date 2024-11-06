@@ -10,6 +10,7 @@ html, body {
   font-family: 'Inter', sans-serif;
 }
 
+/* Titles */
 .title-bottom {
   width: 100%;
   background-color: #0e0d0d;
@@ -110,7 +111,7 @@ html, body {
   color: #3730A3;
 }
 .tag-teritary {
-  background-color:#EDE9FE;;
+  background-color:#EDE9FE;
   color: #5B21B6;
 }
 .tag-alternate {
@@ -155,7 +156,6 @@ html, body {
   gap: 9px;
   justify-content: center;
 }
-
 
 /* Card */
 .card-row {
@@ -239,7 +239,6 @@ html, body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   transform: translateY(-2px);
 }
-
 
 /* Testimonials Text */
 .testimonial-row, .testimonial-row-feature {
@@ -346,7 +345,6 @@ html, body {
 .company {
   font-weight: 200;
 }
-
 
 /* Testimonial Responsive */
 

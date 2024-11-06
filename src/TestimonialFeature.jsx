@@ -11,7 +11,6 @@ const testimonialFallback = {
 export default function TestimonialFeature({ children, photo, photosmall, credentials }) {
   const [name, company] = credentials.split("|")
   const config = testimonialFallback.message
-  
   const [screenSize, setScreenSize] = useState(window.innerWidth < 701 ? 'small' : 'large')
 
   useEffect(() => {

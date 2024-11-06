@@ -4,9 +4,7 @@ import { faCloudArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Card({ mode = 'light', displayStyle }) {
-    
     const [isHovered, setIsHovered] = useState(false)
-    
     const handleMouseEnter = () => setIsHovered(true)
     const handleMouseLeave = () => setIsHovered(false)
 
