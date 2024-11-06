@@ -10,7 +10,7 @@ html, body {
   font-family: 'Inter', sans-serif;
 }
 
-.title {
+.title-bottom {
   width: 100%;
   background-color: #0e0d0d;
   padding: 20px;
@@ -25,6 +25,7 @@ html, body {
   text-align: center;
   font-weight: 800;
   color: #000;
+  font-size: 1.1rem;
   border-bottom: 2px solid #000;
 }
 
@@ -38,7 +39,7 @@ html, body {
   font-size: 0.9rem;
 }
 
-.title a:visited {
+.title-bottom a:visited {
   color: #fff;
 }
 
@@ -83,7 +84,6 @@ html, body {
   color: #1C51B9;
   --highlight-color: #60A5FA;
 }
-
 
 .tag-general {
   background-color: #F3F4F6;

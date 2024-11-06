@@ -62,14 +62,13 @@ export default function App() {
       <div className="card-row">
         <Card displayStyle={displayStyle} />
         <Card mode="dark" displayStyle={displayStyle} />
-      </div>        
+      </div>    
+          
       <div className="title-small">Testimonials</div>
-      
       <div className="testimonial-row">
         <Testimonial credentials="May Andersons | Workstation CEO">
           “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”
         </Testimonial>
-
         <Testimonial credentials="Pumpkin Bot | Chief Encouragement Officer" logo={customLogo}> 
           “My experience with this company has been second to none, I would highly recommend their cat food and cat treats. The focus on healthy and nutrition is a great touch.”
         </Testimonial>
@@ -77,15 +76,15 @@ export default function App() {
 
       <div className="title-small">Testimonial Feature</div>
         <div className="testimonial-row-feature">
-        <TestimonialFeature credentials="May Andersons | Workstation CEO">
-        </TestimonialFeature>
-
-        <TestimonialFeature photo={customPhoto} photosmall={customPhotoSml} credentials="Bob Belcher | Famous TV Chef">
-        I tried their "Rosemary's Baby Burger," and wow it is perfection! The rosemary aioli pairs beautifully with the juicy patty, and the crispy shallots add just the right crunch.
-        </TestimonialFeature>
+          <TestimonialFeature credentials="May Andersons | Workstation CEO" />
+          <TestimonialFeature photo={customPhoto} photosmall={customPhotoSml} credentials="Bob Belcher | Famous TV Chef">
+          I tried their "Rosemary's Baby Burger," and wow it is perfection! The rosemary aioli pairs beautifully with the juicy patty, and the crispy shallots add just the right crunch.
+          </TestimonialFeature>
         </div>
 
-        <div className="title"><a href="https://twitter.com/austin_wild" title="Twitter Profile">Contact</a> | <a href="https://github.com/treadly55/react-component-library" title="GitHub Repository">GitHub</a></div>
+        <div className="title-bottom">
+          <a href="https://twitter.com/austin_wild" title="Twitter Profile">Contact</a> | <a href="https://github.com/treadly55/react-component-library" title="GitHub Repository">GitHub</a>
+        </div>
     </>
   )
 }

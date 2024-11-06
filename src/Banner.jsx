@@ -1,9 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
-import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
-import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
-import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
+import { faCircleCheck, faCircleInfo, faCircleXmark, faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
 
 const bannerVariant = {
     success: { header: "Congratulations!", icon: faCircleCheck, message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.", style:"success"},
